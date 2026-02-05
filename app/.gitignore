@@ -1,0 +1,46 @@
+# --- IDE / Editor ---
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Docker / Dev Containers ---
+# コンテナ内のログや一時ファイル
+.devcontainer/*.log
+
+# --- Dependencies ---
+# ライブラリ本体は重いのでGitには含めず、package.jsonから再現する
+node_modules
+/jspm_packages
+
+# --- Build Output ---
+# ビルド（npm run build）で生成される成果物
+dist
+dist-ssr
+*.local
+
+# --- TypeScript ---
+# キャッシュファイルなど
+*.tsbuildinfo
+
+# --- Environment Variables ---
+# パスワードや鍵などの機密情報を含む可能性があるファイル
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Testing ---
+/coverage
